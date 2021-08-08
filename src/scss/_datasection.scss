@@ -8,19 +8,19 @@
   top: 50%;
   left: 7%;
   right: 7%;
-  transform: translateY(3rem);
+  transform: translateY(2rem);
   height: 40%;
   text-align: center;
   align-items: center;
   @include table {
     grid-template-columns: repeat(2, 1fr);
-    height: 65%;
-    padding: 1.2rem 1rem;
+    height: 150px;
+    right: 7%;
+    margin-top: 1.5rem;
   }
   @include mobile {
     grid-template-columns: repeat(1, 1fr);
-    height: 45vh;
-    padding: 1rem 1rem;
+    height: 300px;
   }
 
   & .data-flex {

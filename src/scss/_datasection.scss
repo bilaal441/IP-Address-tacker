@@ -14,7 +14,7 @@
   align-items: center;
   @include table {
     grid-template-columns: repeat(2, 1fr);
-    height: 55%;
+    height: 65%;
     padding: 1.2rem 1rem;
   }
   @include mobile {

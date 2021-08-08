@@ -14,7 +14,7 @@
   align-items: center;
   @include table {
     grid-template-columns: repeat(2, 1fr);
-    height: 80%;
+    height: 100%;
     transform: translateY(1rem);
   }
   @include mobile {
@@ -43,6 +43,10 @@
   }
 
   & h2 {
+    @include table {
+      font-size: 1.3rem;
+      line-height: 1.5rem;
+    }
     color: $color-Very-Dark;
     font-size: 1.5rem;
     line-height: 2rem;

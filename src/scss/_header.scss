@@ -4,6 +4,13 @@
   width: 100vw;
   position: relative;
 
+  @include table {
+    height: 50vh;
+  }
+  @include mobile {
+    height: 60vh;
+  }
+
   &-flex {
     text-align: center;
 

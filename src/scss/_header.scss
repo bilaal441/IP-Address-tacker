@@ -1,0 +1,60 @@
+.header {
+  background: url(../images/pattern-bg.png) no-repeat center center / cover;
+  height: 40vh;
+  width: 100vw;
+  position: relative;
+
+  &-flex {
+    text-align: center;
+
+    .header-title {
+      color: $color-light;
+      padding: 1rem 0rem;
+      font-size: 1.7rem;
+      text-transform: capitalize;
+      letter-spacing: 1px;
+    }
+
+    & form {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+      padding-bottom: 5rem;
+      width: 100%;
+      & .search__field {
+        @include table {
+          width: 50%;
+        }
+        width: 35%;
+        padding: 1.2rem 2rem;
+        outline: none;
+        border: none;
+        border-radius: 15px 0px 0px 15px;
+        color: $color-Dark-Gray;
+        font-size: 1rem;
+        background: #fff;
+      }
+      & .btn-submit {
+        position: relative;
+        top: 0;
+        background: $color-Very-Dark;
+        display: flex;
+        align-items: center;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        border: none;
+        padding: 0.7rem 0.3rem;
+        border-radius: 0px 15px 15px 0px;
+      }
+
+      svg {
+        display: inline-block;
+        position: absolute;
+        padding-left: 10px;
+        top: 30%;
+      }
+    }
+  }
+}

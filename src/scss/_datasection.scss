@@ -1,0 +1,51 @@
+.ipdata-container {
+  background: #fff;
+  @include align-text;
+  border-radius: 20px;
+  padding: 2rem 1.5rem;
+
+  position: absolute;
+  top: 50%;
+  left: 7%;
+  right: 7%;
+  transform: translateY(3rem);
+  height: 40%;
+  text-align: center;
+  align-items: center;
+  @include table {
+    grid-template-columns: repeat(2, 1fr);
+    height: 80%;
+    transform: translateY(1rem);
+  }
+  @include mobile {
+    grid-template-columns: repeat(1, 1fr);
+    height: 45vh;
+    padding: 1rem 1rem;
+  }
+
+  & .data-flex {
+    border-right: 1px solid $color-Dark-Gray;
+    padding: 0rem 1rem;
+    @include table {
+      border: none;
+    }
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  & .title {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: $color-Dark-Gray;
+    padding-top: 0.8rem;
+  }
+
+  & h2 {
+    color: $color-Very-Dark;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding-top: 0.5rem;
+  }
+}

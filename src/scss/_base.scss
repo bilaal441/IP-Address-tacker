@@ -38,7 +38,7 @@ body {
   z-index: 1000;
 }
 @mixin table {
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 850px) {
     @content;
   }
 }

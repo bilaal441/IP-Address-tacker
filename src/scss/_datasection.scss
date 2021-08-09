@@ -19,6 +19,9 @@
     margin-top: 1.5rem;
   }
   @include mobile {
+    top: 30%;
+    transform: none;
+    padding: 2.5rem 1.5rem;
     grid-template-columns: repeat(1, 1fr);
     height: 300px;
   }
